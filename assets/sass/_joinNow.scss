@@ -1,0 +1,25 @@
+.joinNow {
+	padding: 50px;
+	text-align: center;
+	h1 {
+			font-size: 52px;
+			font-size:  4.5vmax;
+			letter-spacing: -2px;	
+			line-height: 45px;	
+			font-weight: bold;
+			text-align: center;
+	}
+	
+	p {
+		font-size: 18px;	
+		font-size: 1.8vmax;
+		line-height: 27px;
+		color: $white;
+		margin-bottom:  35px;
+	}
+	
+	img {
+		clear: both;
+		margin-top: 35px;
+	}
+}

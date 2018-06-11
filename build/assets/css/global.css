@@ -147,25 +147,42 @@ img {
       line-height: 27px; }
 
 .features {
+  position: relative;
   background: #fff;
   padding: 25px;
   color: #000; }
   .features h1 {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    color: #3B3D40;
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    text-align: center;
+    font-weight: 300; }
+  .features .feature {
+    display: none; }
+    .features .feature.active {
+      display: grid;
+      grid-template-rows: 130px auto;
+      grid-gap: 100px;
+      -ms-flex-align: center;
+          align-items: center; }
   .features .timeline {
-    position: relative;
+    position: absolute;
+    top: 170px;
+    left: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
     margin: 25px 0; }
-    .features .timeline:before {
+    .features .timeline:after {
       display: block;
       position: absolute;
       width: 100%;
       height: 2px;
       background: #DDDDDD;
-      top: 22%;
+      bottom: 0;
       content: " ";
       z-index: 1; }
     .features .timeline .item {
@@ -186,6 +203,78 @@ img {
       .features .timeline .item.active p {
         color: #000; }
       .features .timeline .item.active svg path {
-        fill: #f00; }
+        fill: #000; }
+  .features .feature-title {
+    font-size: 52px;
+    font-size: 4.5vmax;
+    letter-spacing: -2px;
+    line-height: 45px;
+    text-align: center;
+    color: #3C3D41;
+    font-weight: normal;
+    -ms-flex-item-align: center;
+        align-self: center; }
+  .features .feature-desc {
+    padding-top: 30px; }
+  .features .feature-desc p {
+    color: #646464;
+    font-size: 18px;
+    font-size: 1.8vmax;
+    line-height: 27px; }
+
+.aboutMorneau {
+  background: #fff; }
+  .aboutMorneau .morneauDescriptor {
+    padding: 50px; }
+    .aboutMorneau .morneauDescriptor h2 {
+      color: #3C3D41;
+      font-size: 32px;
+      font-size: 3.8vmax;
+      letter-spacing: -1px;
+      line-height: 43px;
+      padding: 0;
+      margin: 0; }
+    .aboutMorneau .morneauDescriptor p {
+      color: #646464;
+      font-size: 18px;
+      font-size: 1.8vmax;
+      line-height: 27px; }
+
+.joinNow {
+  padding: 50px;
+  text-align: center; }
+  .joinNow h1 {
+    font-size: 52px;
+    font-size: 4.5vmax;
+    letter-spacing: -2px;
+    line-height: 45px;
+    font-weight: bold;
+    text-align: center; }
+  .joinNow p {
+    font-size: 18px;
+    font-size: 1.8vmax;
+    line-height: 27px;
+    color: #fff;
+    margin-bottom: 35px; }
+  .joinNow img {
+    clear: both;
+    margin-top: 35px; }
+
+.globalFooter {
+  background: #fff;
+  text-align: center;
+  padding: 30px 0; }
+  .globalFooter p {
+    color: #333333;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center; }
+  .globalFooter .backToTop {
+    color: #4C7329;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center; }
+    .globalFooter .backToTop:hover {
+      color: #63962F; }
 
 /*# sourceMappingURL=.min.css.map */

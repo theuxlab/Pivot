@@ -1,4 +1,5 @@
 .features {
+	position: relative;
 	background: $white;
 	padding: 25px;
 	color: $black;
@@ -6,22 +7,44 @@
 	h1 {
 		margin:  0;
 		padding:  0;
+		color: #3B3D40; 
+		font-size: 11px;	
+		letter-spacing: 2px;	
+		line-height: 15px;	
+		text-align: center;
+		font-weight: 300;
+	}
+	
+	.listedFeatures {
+		
+	}
+	
+	.feature {
+		display: none;
+		&.active {
+			display: grid;
+			grid-template-rows: 130px auto;
+			grid-gap: 100px;
+			align-items: center;
+		}
 	}
 	
 	.timeline {
-		position: relative;
+		position: absolute;
+		top:  170px;
+		left:  0;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		width:  100%;
 		margin:  25px 0;
 		
-		&:before {
+		&:after {
 			display: block;
 			position: absolute;
 			width:  100%;
 			height:  2px;
 			background: #DDDDDD;
-			top: 22%;
+			bottom: 0;
 			content: " ";
 			z-index: 1;
 		}
@@ -55,11 +78,33 @@
 				
 				svg {
 					path {
-						fill: #f00;
+						fill: $black;
 					}
 				}
 			}
 		}
 		
+	}
+	
+	.feature-title {
+		font-size: 52px;
+		font-size:  4.5vmax;
+		letter-spacing: -2px;	
+		line-height: 45px;	
+		text-align: center;
+		color: #3C3D41;
+		font-weight: normal;
+		align-self: center;
+	}
+	
+	.feature-desc {
+		padding-top: 30px;
+	}
+	
+	.feature-desc p {
+		color: #646464;
+		font-size: 18px;	
+		font-size: 1.8vmax;
+		line-height: 27px;
 	}
 }
