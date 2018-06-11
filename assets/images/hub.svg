@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1---Landing" transform="translate(-208.000000, -1135.000000)" fill="#63962F" fill-rule="nonzero">
+            <g id="Content-#15" transform="translate(0.000000, 800.000000)">
+                <g id="Switcher" transform="translate(0.000000, 335.000000)">
+                    <g id="Line_Icons" transform="translate(208.000000, 0.000000)">
+                        <path d="M30.4,0 L1.6,0 C0.7168,0 0,0.7168 0,1.6 L0,30.4 C0,31.2832 0.7168,32 1.6,32 L30.4,32 C31.2832,32 32,31.2832 32,30.4 L32,1.6 C32,0.7168 31.2832,0 30.4,0 Z M28.8,3.2 L28.8,8 L3.2,8 L3.2,3.2 L28.8,3.2 Z M3.2,11.2 L20.8,11.2 L20.8,28.8 L3.2,28.8 L3.2,11.2 Z M24,28.8 L24,11.2 L28.8,11.2 L28.8,28.8 L24,28.8 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

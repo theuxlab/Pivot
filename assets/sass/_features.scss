@@ -1,0 +1,65 @@
+.features {
+	background: $white;
+	padding: 25px;
+	color: $black;
+	
+	h1 {
+		margin:  0;
+		padding:  0;
+	}
+	
+	.timeline {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		width:  100%;
+		margin:  25px 0;
+		
+		&:before {
+			display: block;
+			position: absolute;
+			width:  100%;
+			height:  2px;
+			background: #DDDDDD;
+			top: 22%;
+			content: " ";
+			z-index: 1;
+		}
+		
+		.item {
+			position: relative;
+			z-index:  99;
+			display: grid;
+			grid-template-row: 50px 1fr;
+			justify-items: center;
+			align-items: center;
+			
+			svg {
+				background: #fff;
+				
+				path {
+					fill: #DDD;
+				}
+			}
+			
+			
+			p {
+				font-size:  12px;
+				color: #AAAAAA;
+			}
+			
+			&.active {
+				p {
+					color: $black;
+				}
+				
+				svg {
+					path {
+						fill: #f00;
+					}
+				}
+			}
+		}
+		
+	}
+}

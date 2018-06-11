@@ -1,0 +1,35 @@
+.hero {
+	display: block;
+	color: $white;
+	width: 100%;
+	padding:  25px 0 250px;
+	background:  url('../images/pivotPreview.png') bottom -90px left no-repeat;
+	background-size:  150%;
+	overflow:  hidden;
+	
+	.introduction {
+		display: grid;
+		grid-template-rows: auto auto 100px;
+		grid-gap: 20px;
+		padding:  5%;
+		h1 {
+			font-family: $body-font;
+			color: $white;
+			font-size: 52px;
+			font-size:  12.2vw;
+			font-weight: bold;	
+			letter-spacing: -2px;	
+			line-height: 55px;
+			padding: 0;
+			margin:  0;
+		}
+		
+		p {
+			font-size: 18px;	
+			font-size: 4.5vw;
+			color: $white;
+			line-height: 27px;
+		}
+	}
+	
+}

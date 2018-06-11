@@ -1,0 +1,30 @@
+{
+  "name": "blackberry-jam",
+  "version": "0.1.1",
+  "description": "The new version of the jam functionality",
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "^3.0.0",
+    "gulp-autoprefixer": "*",
+    "gulp-changed": "*",
+    "gulp-clean": "*",
+    "gulp-concat": "*",
+    "gulp-file-include": "*",
+    "gulp-filter": "*",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "*",
+    "gulp-open": "^3.0.1",
+    "gulp-order": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "*",
+    "hbsfy": "*",
+    "main-bower-files": "^2.13.1",
+    "pretty-hrtime": "*",
+    "vinyl-source-stream": "*",
+    "watchify": "^3.11.0"
+  },
+  "dependencies": {
+    "gulp-uglifycss": "*"
+  }
+}

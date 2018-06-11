@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="6px" viewBox="0 0 8 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.699999988">
+        <g id="Dark-Dropdown" transform="translate(-241.000000, -19.000000)" fill="#FFFFFF">
+            <g id="Input">
+                <polygon id="Arrow" points="247.775862 19 245 22.1776316 242.224138 19 241 20.4013158 245 25 249 20.4013158"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
