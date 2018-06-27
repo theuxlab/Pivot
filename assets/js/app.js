@@ -47,13 +47,6 @@ function PasswordHideShow() {
     }
 }
 
-
-var timeline = $(".features .timeline .item").html();
-var feature = $(".features .feature").html();
-console.log(timeline);
-console.log(feature);
-
-
 $(".features .timeline .item").on("click", function() {
 
     $(".features .timeline .item").removeClass("active");  
