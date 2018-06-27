@@ -1,0 +1,42 @@
+.globalHeader {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width:  100%;
+	text-align: center;
+	margin-top: 20px;
+
+	.logos {
+		padding:  0px 0 15px;
+		display: flex;
+		align-content: center;
+		
+		a {
+			padding: 0px 4vw;
+			text-decoration: none;
+			border-right:  1px solid #fff;
+			
+			&:last-child {
+				border-right:  0;
+			}
+		}
+	}
+	
+	.languages {
+		display: block;
+		clear:  both;
+	}
+
+	@media screen and (min-width: 850px) {
+		flex-direction: row;
+		justify-content: space-between;
+
+		.logos {
+			margin-left: 60px;
+		}
+
+		.languages {
+			margin-right: 60px;
+		}
+    }
+}

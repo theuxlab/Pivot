@@ -1,0 +1,56 @@
+.aboutMorneau {
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	.aboutMorneauImage {
+		max-width: 100%
+	}
+
+	.morneauDescriptor {
+		padding: 10%;
+		margin: auto;
+		
+		h2 {
+			color: #3C3D41;	
+			font-size: 3.8vmax;
+			font-size: 32px;	
+			letter-spacing: -1px;	
+			line-height: 43px;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+		}
+		
+		p {
+			color: #646464;
+			font-size: 1.8vmax;
+			font-size: 18px;	
+			line-height: 27px;
+		}
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.aboutMorneau{
+		flex-direction: row;
+
+		.aboutMorneauImage {
+			width: 50%;
+		}
+
+		.morneauDescriptor {
+			padding: 5% !important;
+			width: 50%;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.aboutMorneau {
+		.morneauDescriptor {
+			
+		}
+	}
+}

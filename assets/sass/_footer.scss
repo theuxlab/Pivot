@@ -1,0 +1,38 @@
+.globalFooter {
+	background: #fff;
+	text-align: center;
+	padding:  30px 0;
+	
+	p {
+		color: #333333;	
+		font-size: 12px;	
+		line-height: 17px;	
+		text-align: center;
+	}
+	
+	.backToTop {
+		
+			color: $brand2;	
+			font-size: 12px;	
+			line-height: 19px;	
+			text-align: center;
+			
+			&:hover {
+				color: $brand1;
+			}
+	}
+
+	@media screen and (min-width: 850px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.copyrightInfo {
+			margin-left: 60px;
+		}
+
+		.backToTop {
+			margin-right: 60px;
+		}
+	}
+}

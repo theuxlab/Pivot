@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="22px" viewBox="0 0 77 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Pivot Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pivot-MS-Logo-/-White" transform="translate(0.000000, -1.000000)" fill="#FFFFFF">
+            <g id="Group-4">
+                <g id="Pivot-Logo-/-White">
+                    <g id="Pivot-Logo">
+                        <text id="Pivot" font-family="OpenSans-Bold, Open Sans" font-size="18" font-weight="bold">
+                            <tspan x="31" y="19">Pivot</tspan>
+                        </text>
+                        <g id="Group" transform="translate(0.000000, 1.000000)" fill-rule="nonzero">
+                            <path d="M21.707,10.293 L11.707,0.293 C11.316,-0.098 10.684,-0.098 10.293,0.293 L0.293,10.293 C-0.098,10.684 -0.098,11.316 0.293,11.707 L10.293,21.707 C10.488,21.902 10.744,22 11,22 C11.256,22 11.512,21.902 11.707,21.707 L21.707,11.707 C22.098,11.316 22.098,10.684 21.707,10.293 Z M11,19.586 L2.414,11 L11,2.414 L19.586,11 L11,19.586 Z" id="Shape"></path>
+                            <path d="M8,9 L8,16 L10,16 L10,9 C10,8.449 10.449,8 11,8 C11.551,8 12,8.449 12,9 L12,11 L11,11 L13,14 L15,11 L14,11 L14,9 C14,7.346 12.654,6 11,6 C9.346,6 8,7.346 8,9 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

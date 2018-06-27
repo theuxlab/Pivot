@@ -1,0 +1,76 @@
+/* Select Box on a Dark Background */
+.dark-dropdown {
+	position: relative;
+	width:  100%;
+	max-width:  275px;
+	overflow:  hidden;
+	border-radius:  5px;
+	
+	select {
+		position: relative;
+		background: rgba(#fff, 0.15);
+		color: $white;
+		height: 45px;
+		border-radius:  5px;
+		border: none;
+		font-family: $body-font;
+		font-size: 14px;
+		line-height: 19px;
+		width:  100%;
+		max-width: 295px;
+		-webkit-appearance: none;
+		padding:13px;
+	}
+	
+	&:after {
+		position: absolute;
+		display: block;
+		background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik02Ljc3NiAwTDQgMy4xNzggMS4yMjQgMCAwIDEuNDAxIDQgNmw0LTQuNTk5eiIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuNyIvPjwvc3ZnPg==) top left no-repeat;
+		width: 8px;
+		height: 6px;
+		top:  20px;
+		right:  20px;
+		opacity: 0.8;
+		content:  " ";
+	}
+}
+
+
+/* Pivot Button */
+
+.pivotBtn {
+	position: relative;
+	background: #FCFCFC;
+	border: 1px solid #F7F7F7;
+	box-shadow: 0 1px 1px 0 rgba(112,112,112,0.50);
+	border-radius: 2px;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight:  700;
+	font-size: 14px;
+	padding:  10px 15px 10px 50px;
+	text-decoration: none;
+	color: #777777;
+	letter-spacing: 0.2px;
+	
+	&:hover {
+		color: $brand2;
+		background: #F6F6F6;
+	}
+	
+	&:focus, &:active {
+		color: $brand2;
+		background: #F6F6F6;
+		box-shadow: inset 0 1px 3px 0 rgba(112,112,112,0.50); 
+	}
+	
+	&:before {
+		position: absolute;
+		display: block;
+		background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzYzOTYyRiI+PHBhdGggZD0iTTI0LjU2NiAxMS45NjhMMTMuNDguODM2YTEuMTA0IDEuMTA0IDAgMCAwLTEuNTY4IDBMLjgyNSAxMS45NjhhMS4xMTUgMS4xMTUgMCAwIDAgMCAxLjU3NGwxMS4wODcgMTEuMTMyYTEuMTAzIDEuMTAzIDAgMCAwIDEuNTY3IDBsMTEuMDg3LTExLjEzMmExLjExNSAxLjExNSAwIDAgMCAwLTEuNTc0em0tMTEuODcgMTAuMzQ1bC05LjUyLTkuNTU4IDkuNTItOS41NTggOS41MTkgOS41NTgtOS41MiA5LjU1OHoiLz48cGF0aCBkPSJNOS4zNyAxMC41Mjl2Ny43OTJoMi4yMTd2LTcuNzkyYzAtLjYxNC40OTgtMS4xMTMgMS4xMDktMS4xMTMuNjEgMCAxLjEwOC41IDEuMTA4IDEuMTEzdjIuMjI2aC0xLjEwOGwyLjIxNyAzLjM0IDIuMjE3LTMuMzRoLTEuMTA4VjEwLjUzYTMuMzM3IDMuMzM3IDAgMCAwLTMuMzI2LTMuMzQgMy4zMzcgMy4zMzcgMCAwIDAtMy4zMjYgMy4zNHoiLz48L2c+PC9zdmc+) top left no-repeat;
+		width: 25px;
+		height: 26px;
+		top:  7px;
+		left:  8px;
+		content:  " ";
+	}
+}
