@@ -5,6 +5,7 @@
 	color: $black;
 	height: 30vh;
 	border-bottom: 1px solid $black;
+
 	
 	h1 {
 		margin:  0;
@@ -18,10 +19,8 @@
 	}
 	
 	
-	
 	.feature {
 		display: none;
-
 		&.active {
 			display: grid;
 			grid-template-rows: 130px auto;
@@ -75,11 +74,13 @@
 			&.active {
 				p {
 					color: $brand1;
+
 				}
 				
 				svg {
 					path {
 						fill: $brand1;
+
 					}
 				}
 			}

@@ -54,7 +54,3 @@ $(".features .timeline .item").on("click", function() {
 
 });
 
-
-
-
-    
