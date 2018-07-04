@@ -4,7 +4,7 @@
   "description": "The new version of the jam functionality",
   "devDependencies": {
     "browser-sync": "*",
-    "gulp": "^3.0.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "*",
     "gulp-changed": "*",
     "gulp-clean": "*",

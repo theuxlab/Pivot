@@ -100,7 +100,8 @@ img {
   -ms-flex-align: center;
       align-items: center;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  margin-top: 20px; }
   .globalHeader .logos {
     padding: 0px 0 15px;
     display: -ms-flexbox;
@@ -116,41 +117,77 @@ img {
   .globalHeader .languages {
     display: block;
     clear: both; }
+  @media screen and (min-width: 850px) {
+    .globalHeader {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .globalHeader .logos {
+        margin-left: 60px; }
+      .globalHeader .languages {
+        margin-right: 60px; } }
 
 .hero {
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   color: #fff;
   width: 100%;
-  padding: 25px 0 250px;
-  background: url("../images/pivotPreview.png") bottom -90px left no-repeat;
-  background-size: 150%;
-  overflow: hidden; }
+  position: relative;
+  overflow: hidden;
+  height: 100vh; }
   .hero .introduction {
     display: grid;
-    grid-template-rows: auto auto 100px;
+    grid-template-rows: auto auto 30px;
     grid-gap: 20px;
     padding: 5%; }
     .hero .introduction h1 {
       font-family: "Open Sans", sans-serif;
       color: #fff;
-      font-size: 52px;
       font-size: 12.2vw;
+      font-size: 52px;
       font-weight: bold;
       letter-spacing: -2px;
       line-height: 55px;
       padding: 0;
       margin: 0; }
     .hero .introduction p {
-      font-size: 18px;
       font-size: 4.5vw;
+      font-size: 18px;
       color: #fff;
       line-height: 27px; }
+  .hero .landingPageImage {
+    position: absolute;
+    bottom: 0;
+    right: -40%; }
+
+@media screen and (min-width: 850px) {
+  .hero {
+    height: 90vh; }
+    .hero .introduction {
+      width: 55%;
+      margin-top: 5%;
+      max-width: 600px; }
+    .hero .landingPageImage {
+      top: 10%;
+      bottom: inherit;
+      width: 90%;
+      right: -30% !important; } }
+
+@media screen and (min-width: 1200px) {
+  .landingPageImage {
+    width: 85%;
+    right: -20% !important; } }
 
 .features {
   position: relative;
-  background: #fff;
+  background: #F9F9F9;
   padding: 25px;
-  color: #000; }
+  color: #000;
+  height: 30vh;
+  border-bottom: 1px solid #000; }
   .features h1 {
     margin: 0;
     padding: 0;
@@ -170,7 +207,7 @@ img {
           align-items: center; }
   .features .timeline {
     position: absolute;
-    top: 170px;
+    top: 50px;
     left: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -201,12 +238,12 @@ img {
         font-size: 12px;
         color: #AAAAAA; }
       .features .timeline .item.active p {
-        color: #000; }
+        color: #63962F; }
       .features .timeline .item.active svg path {
-        fill: #000; }
+        fill: #63962F; }
   .features .feature-title {
-    font-size: 52px;
     font-size: 4.5vmax;
+    font-size: 52px;
     letter-spacing: -2px;
     line-height: 45px;
     text-align: center;
@@ -215,50 +252,254 @@ img {
     -ms-flex-item-align: center;
         align-self: center; }
   .features .feature-desc {
-    padding-top: 30px; }
+    padding-top: 30px;
+    margin-bottom: 30px; }
   .features .feature-desc p {
     color: #646464;
     font-size: 18px;
     font-size: 1.8vmax;
     line-height: 27px; }
 
+@media screen and (min-width: 850px) {
+  .features {
+    height: auto;
+    padding-top: 40px; }
+    .features .timeline {
+      top: 170px; }
+    .features .listedFeatures .feature-1 {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+    .features .listedFeatures .feature-desc {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+      .features .listedFeatures .feature-desc p {
+        width: 40%;
+        margin-top: 100px;
+        font-size: 18px;
+        line-height: 27px; } }
+
+.signUpPage {
+  /* The Form area (background) */ }
+  .signUpPage .hero {
+    background: none;
+    text-align: center;
+    padding-bottom: 0;
+    height: auto !important;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+    .signUpPage .hero .introduction {
+      grid-template-rows: auto auto;
+      padding: 4%; }
+  .signUpPage .formArea {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    /* Form Content/Box */ }
+    .signUpPage .formArea .form-content {
+      background-color: #F9F9F9;
+      margin: 5% auto 2% auto;
+      /* 5% from the top, 5% from the bottom and centered */
+      border: 1px solid #888;
+      width: 90%;
+      /* Could be more or less, depending on screen size */
+      border-radius: 4px;
+      max-width: 580px;
+      /* Add padding to container elements */
+      /* Clear floats */
+      /* Float signup button and add an equal width */
+      /* Set a style for all buttons */ }
+      .signUpPage .formArea .form-content .container {
+        padding: 16px;
+        /* Full-width input fields */ }
+        .signUpPage .formArea .form-content .container input[type=text], .signUpPage .formArea .form-content .container input[type=password], .signUpPage .formArea .form-content .container input[type=tel] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 5px 0;
+          display: inline-block;
+          border: none;
+          background: #fff;
+          margin-top: 30px;
+          border-radius: 4px;
+          border: 1px solid #E3E3E3;
+          /* Add a background color when the inputs get focus */ }
+          .signUpPage .formArea .form-content .container input[type=text]:focus, .signUpPage .formArea .form-content .container input[type=password]:focus, .signUpPage .formArea .form-content .container input[type=tel]:focus {
+            background-color: #ddd;
+            outline: none; }
+        .signUpPage .formArea .form-content .container label {
+          color: #646464;
+          height: 18px;
+          font-family: "Open Sans";
+          opacity: 0.8;
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: .3px;
+          width: 95%;
+          padding-left: 10px;
+          display: inline-block;
+          margin-top: 5px; }
+        .signUpPage .formArea .form-content .container .dark-dropdown {
+          background: #fff;
+          border: 1px solid #E3E3E3;
+          display: block;
+          max-width: 100%;
+          margin-top: 30px; }
+          .signUpPage .formArea .form-content .container .dark-dropdown select {
+            color: #646464;
+            opacity: .8;
+            max-width: 100%; }
+          .signUpPage .formArea .form-content .container .dark-dropdown:after {
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMC8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMtU1ZHLTIwMDEwOTA0L0RURC9zdmcxMC5kdGQnPjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHBvaW50cz0iMjEsOC41IDEyLDE3LjUgMyw4LjUgIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+) top left no-repeat;
+            position: absolute;
+            display: block;
+            width: 10px;
+            height: 16px;
+            top: 20px;
+            right: 20px;
+            opacity: 0.8;
+            content: " "; }
+        .signUpPage .formArea .form-content .container .passwordField {
+          position: relative; }
+          .signUpPage .formArea .form-content .container .passwordField .hideShowPasswordBtn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 70px;
+            border-radius: 0 4px 4px 0;
+            margin: 5px 0 5px 0;
+            margin-top: 30px;
+            padding: 15px;
+            opacity: 1;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: .5px; }
+      .signUpPage .formArea .form-content .clearfix::after {
+        content: "";
+        clear: both;
+        display: table; }
+      .signUpPage .formArea .form-content .signupbtn {
+        float: left;
+        width: 50%; }
+      .signUpPage .formArea .form-content button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+        border-radius: 25px;
+        margin-top: 60px; }
+        .signUpPage .formArea .form-content button:hover {
+          opacity: 1; }
+    .signUpPage .formArea p {
+      font-size: 18px;
+      color: #fff;
+      line-height: 27px;
+      text-align: center;
+      margin-bottom: 50px; }
+      .signUpPage .formArea p .LoginNowLink {
+        color: #cbe3ae;
+        font-weight: bold; }
+  .signUpPage .error-message {
+    color: #8E0011;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    display: none;
+    margin-bottom: 20px; }
+    .signUpPage .error-message span {
+      font-weight: bold; }
+  .signUpPage .error-highlight {
+    border-color: #A52E3C !important;
+    background: #FFE7E7 !important;
+    color: #A52E3C !important; }
+  @media screen and (min-width: 450px) {
+    .signUpPage .hero .introduction h1 {
+      font-size: 52px;
+      max-width: 580px;
+      margin: auto; }
+    .signUpPage .hero .introduction p {
+      letter-spacing: .4px;
+      max-width: 580px;
+      font-size: 18px;
+      margin-bottom: 25px; }
+    .signUpPage .form-content {
+      margin-top: 0 !important; } }
+
 .aboutMorneau {
-  background: #fff; }
+  background: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 100%; }
+  .aboutMorneau .aboutMorneauImage {
+    max-width: 100%; }
   .aboutMorneau .morneauDescriptor {
-    padding: 50px; }
+    padding: 10%;
+    margin: auto; }
     .aboutMorneau .morneauDescriptor h2 {
       color: #3C3D41;
-      font-size: 32px;
       font-size: 3.8vmax;
+      font-size: 32px;
       letter-spacing: -1px;
       line-height: 43px;
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      text-align: center; }
     .aboutMorneau .morneauDescriptor p {
       color: #646464;
-      font-size: 18px;
       font-size: 1.8vmax;
+      font-size: 18px;
       line-height: 27px; }
+
+@media screen and (min-width: 850px) {
+  .aboutMorneau {
+    -ms-flex-direction: row;
+        flex-direction: row; }
+    .aboutMorneau .aboutMorneauImage {
+      width: 50%; }
+    .aboutMorneau .morneauDescriptor {
+      padding: 5% !important;
+      width: 50%; } }
 
 .joinNow {
   padding: 50px;
   text-align: center; }
   .joinNow h1 {
-    font-size: 52px;
     font-size: 4.5vmax;
+    font-size: 52px;
     letter-spacing: -2px;
     line-height: 45px;
     font-weight: bold;
     text-align: center; }
   .joinNow p {
-    font-size: 18px;
     font-size: 1.8vmax;
+    font-size: 18px;
     line-height: 27px;
     color: #fff;
     margin-bottom: 35px; }
   .joinNow img {
     clear: both;
     margin-top: 35px; }
+
+@media screen and (min-width: 850px) {
+  .joinNow p {
+    display: inline-block;
+    width: 40%; } }
 
 .globalFooter {
   background: #fff;
@@ -276,5 +517,17 @@ img {
     text-align: center; }
     .globalFooter .backToTop:hover {
       color: #63962F; }
+  @media screen and (min-width: 850px) {
+    .globalFooter {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center; }
+      .globalFooter .copyrightInfo {
+        margin-left: 60px; }
+      .globalFooter .backToTop {
+        margin-right: 60px; } }
 
 /*# sourceMappingURL=.min.css.map */

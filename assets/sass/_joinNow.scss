@@ -2,8 +2,8 @@
 	padding: 50px;
 	text-align: center;
 	h1 {
-			font-size: 52px;
 			font-size:  4.5vmax;
+			font-size: 52px;
 			letter-spacing: -2px;	
 			line-height: 45px;	
 			font-weight: bold;
@@ -11,15 +11,24 @@
 	}
 	
 	p {
-		font-size: 18px;	
 		font-size: 1.8vmax;
+		font-size: 18px;	
 		line-height: 27px;
 		color: $white;
-		margin-bottom:  35px;
+		margin-bottom: 35px;
 	}
 	
 	img {
 		clear: both;
 		margin-top: 35px;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.joinNow{
+		p {
+			display: inline-block;
+			width: 40%;
+		}
 	}
 }

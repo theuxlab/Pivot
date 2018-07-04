@@ -1,22 +1,25 @@
 .hero {
-	display: block;
+	display: flex;
+	flex-direction: column;
 	color: $white;
 	width: 100%;
-	padding:  25px 0 250px;
-	background:  url('../images/pivotPreview.png') bottom -90px left no-repeat;
-	background-size:  150%;
+	position: relative;
+	// padding:  25px 0 250px;
+	// background:  url('../images/pivotPreview.png') bottom -60px left 200px no-repeat;
+	// background-size:  600px;
 	overflow:  hidden;
+	height: 100vh;
 	
 	.introduction {
 		display: grid;
-		grid-template-rows: auto auto 100px;
+		grid-template-rows: auto auto 30px;
 		grid-gap: 20px;
 		padding:  5%;
 		h1 {
 			font-family: $body-font;
 			color: $white;
-			font-size: 52px;
 			font-size:  12.2vw;
+			font-size: 52px;
 			font-weight: bold;	
 			letter-spacing: -2px;	
 			line-height: 55px;
@@ -25,11 +28,45 @@
 		}
 		
 		p {
-			font-size: 18px;	
 			font-size: 4.5vw;
+			font-size: 18px;
 			color: $white;
 			line-height: 27px;
 		}
 	}
-	
+
+	.landingPageImage {
+		position: absolute;
+		bottom: 0;
+		right: -40%;
+		
+	}
 }
+
+@media screen and (min-width: 850px) {
+	.hero {
+			height: 90vh;
+
+		.introduction {
+			width: 55%;
+			margin-top: 5%;
+			max-width: 600px;
+		}
+
+		.landingPageImage {
+			top: 10%;
+			bottom: inherit;
+			width: 90%;
+			right: -30% !important;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.landingPageImage{
+		width: 85%;
+		right: -20% !important;
+	}
+}
+	
+

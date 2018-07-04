@@ -1,0 +1,58 @@
+@@include('./partials/header.hbs', {
+    "title" : "Sign Up",
+    "pageBodyClass" : "signUpPage"
+})
+
+
+<section class="hero container">
+	
+	<div class="introduction">
+		<h1>Get started with Pivot</h1>
+		<p>By signing up to Pivot you get access to Nulla cursus rhoncus interdum. Integer quis facilisis nisi, at mollis velit. Duis interdum ex eget cursus.</p>
+	</div>
+
+</section>
+
+<div id="id01" class="formArea">
+    <form class="form-content" action="/action_page.php">
+        <div class="container">
+            <p class="error-message">Sorry. We’ve run into a problem with your <span class="error"></span>. Can you review it and try again?</p>
+
+            <input type="text" placeholder="First Name" data-validation-name="First Name" name="FirstName" required>
+            <label for="FirstName">Provide your first name so we know what to call you during calls.</label>
+
+            <input type="text" placeholder="Last Name"  data-validation-name="Last Name" name="LastName" required>
+            <label for="LastName">Provide your last name so we know what to call you during calls.</label>
+
+            <input type="text" placeholder="Enter Email" name="email" data-validation-name="Email Address" required>
+            <label for="email">We need to know your email so that we can send you the details when you request programs or submit claims.</label>
+
+            <input id="telNo" name="telNo" type="tel" placeholder="123-4567-8901"  data-validation-name="Telephone">
+            <label for="telNo">Your phone number is required in order for our advisors and coaches to reach out to you during programs or to follow up with claims.</label>
+            
+            <div class="passwordField">
+                <input type="password" placeholder="Enter Password" name="psw" required  data-validation-name="Password">
+                <button type="button" class="hideShowPasswordBtn" onclick="PasswordHideShow()">Show</button>
+            </div>
+            
+            <label for="psw">Use a phrase of four random words (like: pillow jar symbol lift) is secure and easy to remember.</label>
+            
+            <div class="languages dark-dropdown">
+                <select name="lang">
+                    <option value="English">English</option>
+                    <option value="French">Français</option>
+                </select>
+            </div>
+            <label for="lang">Select a language you’re most comfortable with.</label>
+            <div class="clearfix">
+                <button type="button" onclick="ValidateForm()" class="signup">Sign Up</button>
+            </div>
+        </div>
+    </form>
+    <p>Already joined Pivot? <a href="" class="LoginNowLink">Log in now</a></p>
+
+</div>
+
+
+@@include('./partials/footer.hbs')
+

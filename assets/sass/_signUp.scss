@@ -1,0 +1,208 @@
+.signUpPage {
+    .hero {
+        background: none;
+        text-align: center;
+        padding-bottom: 0;
+        height: auto !important;
+        display: flex;
+        align-items: center;
+
+        .introduction {
+            grid-template-rows: auto auto;
+            padding: 4%;
+        }
+    }
+
+    /* The Form area (background) */
+    .formArea {
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+
+        /* Form Content/Box */
+        .form-content {
+            background-color: #F9F9F9;
+            margin: 5% auto 2% auto; /* 5% from the top, 5% from the bottom and centered */
+            border: 1px solid #888;
+            width: 90%; /* Could be more or less, depending on screen size */
+            border-radius: 4px;
+            max-width: 580px;
+
+            /* Add padding to container elements */
+            .container {
+                padding: 16px;
+
+                /* Full-width input fields */
+                input[type=text], input[type=password], input[type=tel] {
+                    width: 100%;
+                    padding: 15px;
+                    margin: 5px 0 5px 0;
+                    display: inline-block;
+                    border: none;
+                    background: #fff;
+                    margin-top: 30px;
+                    border-radius: 4px;
+                    border: 1px solid #E3E3E3;
+
+
+                    /* Add a background color when the inputs get focus */
+                    &:focus {
+                        background-color: #ddd;
+                        outline: none;
+                    }
+                }
+            
+
+                label {
+                    color: #646464;
+                    height: 18px;
+                    font-family: "Open Sans";
+                    opacity: 0.8;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: .3px;
+                    width: 95%;
+                    padding-left: 10px;
+                    display: inline-block;
+                    margin-top: 5px;
+                }
+
+                .dark-dropdown {
+                    background: #fff;
+                    border: 1px solid #E3E3E3;
+                    display: block;
+                    max-width: 100%;
+                    margin-top: 30px;
+
+                    select {
+                        color: #646464;
+                        opacity: .8;
+                        max-width: 100%;
+                    }
+
+                    &:after {
+                        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMC8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMtU1ZHLTIwMDEwOTA0L0RURC9zdmcxMC5kdGQnPjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHBvaW50cz0iMjEsOC41IDEyLDE3LjUgMyw4LjUgIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+) top left no-repeat;
+                        position: absolute;
+                        display: block;
+                        width: 10px;
+                        height: 16px;
+                        top:  20px;
+                        right:  20px;
+                        opacity: 0.8;
+                        content:  " ";
+                    }
+                }
+
+                .passwordField {
+                    position: relative;
+
+                    .hideShowPasswordBtn {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        width: 70px;
+                        border-radius: 0 4px 4px 0;
+                        margin: 5px 0 5px 0;
+                        margin-top: 30px;
+                        padding: 15px;
+                        opacity: 1;
+                        font-weight: bold;
+                        font-size: 14px;
+                        letter-spacing: .5px;
+                    }
+                }
+            }
+
+            /* Clear floats */
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            /* Float signup button and add an equal width */
+            .signupbtn {
+                float: left;
+                width: 50%;
+            }
+
+            /* Set a style for all buttons */
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+                border-radius: 25px;
+                margin-top: 60px;
+
+                &:hover {
+                    opacity:1;
+                }
+            }
+        }
+
+        p {
+        font-size: 18px;
+        color: #fff;
+        line-height: 27px;
+        text-align: center;
+        margin-bottom: 50px;
+
+            .LoginNowLink {
+                color: #cbe3ae;
+                font-weight: bold;
+            }
+        }
+    }
+
+    
+
+
+    .error-message {
+        color: #8E0011;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        display: none;
+        margin-bottom: 20px;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .error-highlight {
+        border-color: #A52E3C !important;
+        background: #FFE7E7 !important;
+        color: #A52E3C !important;
+    }
+    
+
+    @media screen and (min-width: 450px) {
+		.hero {
+            .introduction {
+                h1 {
+                    font-size: 52px;
+                    max-width: 580px;
+                    margin: auto;
+                }
+
+                p{
+                    letter-spacing: .4px;
+                    max-width: 580px;
+                    font-size: 18px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        
+        .form-content {
+            margin-top: 0 !important;
+        }
+    }
+}

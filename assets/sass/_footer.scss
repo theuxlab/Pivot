@@ -21,4 +21,18 @@
 				color: $brand1;
 			}
 	}
+
+	@media screen and (min-width: 850px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.copyrightInfo {
+			margin-left: 60px;
+		}
+
+		.backToTop {
+			margin-right: 60px;
+		}
+	}
 }

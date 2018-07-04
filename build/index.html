@@ -5,11 +5,14 @@
         <title>Home Page</title>
         <meta name="description" content="">
         <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/global.css">
 
     </head>
-    <body>
+    <body class="@@pageBodyClass">
 		<header class="globalHeader">
 			<div class="logos">
 				<a href="#"><svg width="77" height="22" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><text font-family="OpenSans-Bold, Open Sans" font-size="18" font-weight="bold" transform="translate(0 -1)"><tspan x="31" y="19">Pivot</tspan></text><g fill-rule="nonzero"><path d="M21.707 10.293l-10-10a.999.999 0 0 0-1.414 0l-10 10a.999.999 0 0 0 0 1.414l10 10a.997.997 0 0 0 1.414 0l10-10a.999.999 0 0 0 0-1.414zM11 19.586L2.414 11 11 2.414 19.586 11 11 19.586z"/><path d="M8 9v7h2V9c0-.551.449-1 1-1 .551 0 1 .449 1 1v2h-1l2 3 2-3h-1V9c0-1.654-1.346-3-3-3S8 7.346 8 9z"/></g></g></svg></a>
@@ -34,9 +37,13 @@
 		
 		
 		<div class="getStarted">
-	<a href="#" class="pivotBtn">Continue In with Pivot</a></div>
+	<a href= ./signUp.html class="pivotBtn">Continue In with Pivot</a></div>
 </div>
+
+
+		 
 	</div>
+	<img class="landingPageImage" src="./assets/images/pivotPreview.png" alt="" />
 
 </section>
 
@@ -44,29 +51,29 @@
 	<h1>Features</h1>
 	
 	<div class="timeline">
-		<div class="item active">
+		<div class="item active theHub">
 			<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg"><path d="M30.4 0H1.6A1.6 1.6 0 0 0 0 1.6v28.8A1.6 1.6 0 0 0 1.6 32h28.8a1.6 1.6 0 0 0 1.6-1.6V1.6A1.6 1.6 0 0 0 30.4 0zm-1.6 3.2V8H3.2V3.2h25.6zm-25.6 8h17.6v17.6H3.2V11.2zM24 28.8V11.2h4.8v17.6H24z" fill="#63962F"/></svg>
 			<p>The Hub</p>
 		</div>
 		
-		<div class="item">
+		<div class="item programs">
 			<svg width="32" height="25" xmlns="http://www.w3.org/2000/svg"><path d="M1.25 12.336h17.61c.316 0 .619-.118.85-.332l10.639-9.836A1.25 1.25 0 0 0 29.499 0h-17.61a1.25 1.25 0 0 0-.85.332L.402 10.168a1.251 1.251 0 0 0 .849 2.168zM12.377 2.5h13.93l-7.935 7.336H4.442L12.378 2.5zM1.25 18.476a1.25 1.25 0 1 1 0-2.5h18.972l9.007-9.034a1.25 1.25 0 0 1 1.769 1.766l-9.373 9.401a1.245 1.245 0 0 1-.885.367H1.25zm30.383-4.419a1.25 1.25 0 0 1 .003 1.767l-8.781 8.809a1.255 1.255 0 0 1-.886.367H1.249a1.25 1.25 0 0 1 0-2.5h20.2l8.415-8.442a1.25 1.25 0 0 1 1.769-.001z" fill="#DDD" fill-rule="evenodd"/></svg>
 			<p>Programs</p>
 		</div>
 		
-		<div class="item">
+		<div class="item resources">
 			<svg width="32" height="28" xmlns="http://www.w3.org/2000/svg"><g fill="#DDD"><path d="M29.333 0H2.667A2.67 2.67 0 0 0 0 2.667V20a2.67 2.67 0 0 0 2.667 2.667h12v2.666H9.333V28h13.334v-2.667h-5.334v-2.666h12A2.668 2.668 0 0 0 32 20V2.667A2.668 2.668 0 0 0 29.333 0zm0 2.667L29.331 16H2.667V2.667h26.666zM2.667 20v-1.333h26.662V20H2.667z"/><path d="M11.999 4v10.667l10.666-5.334z"/></g></svg>
 			<p>Resources</p>
 		</div>
 		
-		<div class="item">
+		<div class="item tools">
 			<svg width="32" height="29" xmlns="http://www.w3.org/2000/svg"><g fill="#DDD"><path d="M30.4 6.444h-8V1.611C22.4.723 21.685 0 20.8 0h-9.6c-.885 0-1.6.722-1.6 1.611v4.833h-8c-.885 0-1.6.722-1.6 1.612v19.333C0 28.279.715 29 1.6 29h28.8c.885 0 1.6-.72 1.6-1.611V8.056c0-.89-.715-1.612-1.6-1.612zM12.8 3.222h6.4v3.222h-6.4V3.222zm16 22.556H3.2V9.667h25.6v16.11z"/><path d="M17.894 16.111h-3.787c-.664-1.872-2.42-3.222-4.507-3.222-2.086 0-3.843 1.35-4.506 3.222H9.6v3.222H5.094c.661 1.874 2.418 3.223 4.506 3.223s3.846-1.347 4.506-3.223h3.787c.66 1.876 2.419 3.223 4.505 3.223 2.087 0 3.847-1.347 4.506-3.223H22.4v-3.222h4.506c-.663-1.872-2.421-3.222-4.506-3.222-2.085 0-3.843 1.35-4.506 3.222z"/></g></svg>
 			<p>Tools</p>
 		</div>
 	</div>
 	
 	<div class="listedFeatures">
-		<div class="feature feature-1 active">
+		<div class="feature feature-1 theHub">
 			<h2 class="feature-title">Everything you need in one place</h2>
 			
 			<div class="feature-desc">
@@ -76,8 +83,8 @@
 			</div>
 		</div>
 		
-		<div class="feature feature-2">
-			<h2>Programs designed for you</h2>
+		<div class="feature feature-2 programs">
+			<h2 class="feature-title">Programs designed for you</h2>
 			
 			<div class="feature-desc">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisi massa, mollis eu consequat vitae, auctor sed tortor. Pellentesque accumsan, lectus non iaculis dapibus, mauris sem mollis risus, quis viverra ante enim molestie dui. Etiam commodo, felis eget suscipit faucibus, diam felis venenatis erat, vel semper nulla sem eget nisi. Etiam tempor</p>
@@ -86,8 +93,8 @@
 			</div>
 		</div>
 		
-		<div class="feature feature-3">
-			<h2>Articles and Videos to support you</h2>
+		<div class="feature feature-3 resources">
+			<h2 class="feature-title">Articles and Videos to support you</h2>
 			
 			<div class="feature-desc">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisi massa, mollis eu consequat vitae, auctor sed tortor. Pellentesque accumsan, lectus non iaculis dapibus, mauris sem mollis risus, quis viverra ante enim molestie dui. Etiam commodo, felis eget suscipit faucibus, diam felis venenatis erat, vel semper nulla sem eget nisi. Etiam tempor</p>
@@ -96,8 +103,8 @@
 			</div>
 		</div>
 		
-		<div class="feature feature-4">
-			<h2>Tools that you need</h2>
+		<div class="feature feature-4 tools">
+			<h2 class="feature-title">Tools that you need</h2>
 			
 			<div class="feature-desc">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisi massa, mollis eu consequat vitae, auctor sed tortor. Pellentesque accumsan, lectus non iaculis dapibus, mauris sem mollis risus, quis viverra ante enim molestie dui. Etiam commodo, felis eget suscipit faucibus, diam felis venenatis erat, vel semper nulla sem eget nisi. Etiam tempor</p>
@@ -109,7 +116,7 @@
 </section>
 
 <section class="aboutMorneau">
-	<img src="assets/images/aboutMorneau.png" alt="About Morneau Shepell">
+	<img class="aboutMorneauImage" src="assets/images/aboutMorneau.png" alt="About Morneau Shepell">
 	
 	<div class="morneauDescriptor">
 		<h2>About Morneau Shepell</h2>
@@ -122,14 +129,13 @@
 
 <section class="joinNow">
 	<svg width="49" height="48" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF"><path d="M48.133 22.457L25.959.64a2.24 2.24 0 0 0-3.135 0L.65 22.457a2.155 2.155 0 0 0 0 3.086L22.824 47.36c.432.425 1 .639 1.567.639a2.23 2.23 0 0 0 1.568-.64l22.174-21.817a2.155 2.155 0 0 0 0-3.086zM24.39 42.733L5.353 24 24.39 5.267 43.43 24 24.39 42.733z"/><path d="M17.74 19.636V34.91h4.434V19.636c0-1.202.996-2.181 2.217-2.181 1.222 0 2.218.98 2.218 2.181V24H24.39l4.435 6.545L33.261 24h-2.218v-4.364c0-3.608-2.984-6.545-6.652-6.545-3.667 0-6.652 2.937-6.652 6.545z"/></g></svg>
-	
 	<h1>Pivot Today</h1>
 	<p>By signing up with Pivot, you’ll have access to all of these great features and more. Join today and change for your future for the better.</p>
 	
-	
 	<div class="getStarted">
-	<a href="#" class="pivotBtn">Continue In with Pivot</a></div>
-</div>;
+	<a href= @@link class="pivotBtn">Continue In with Pivot</a></div>
+</div>
+
 	
 	<img src="assets/images/pivotScreens.png" alt="Screenshots of Pivot">
 	
